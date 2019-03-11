@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.gd.leecode</groupId>
+        <artifactId>leecode-code</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>leecode-code</artifactId>
+    <packaging>jar</packaging>
+
+    <name>leecode-code</name>
+
+    <build>
+        <finalName>leecode-code</finalName>
+    </build>
+
+    <dependencies>
+
+        <!--
+			Tester Libs
+        -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.aspectj</groupId>
+            <artifactId>aspectjrt</artifactId>
+        </dependency>
+        <!-- Tester Libs end -->
+    </dependencies>
+</project>
