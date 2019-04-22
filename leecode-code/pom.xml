@@ -4,8 +4,8 @@
 
     <parent>
         <groupId>org.gd.leecode</groupId>
-        <artifactId>leecode-code</artifactId>
-        <version>1.0.0</version>
+        <artifactId>leecode</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>leecode-code</artifactId>
@@ -25,11 +25,18 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
+            <version>4.12</version>
         </dependency>
         <dependency>
             <groupId>org.aspectj</groupId>
             <artifactId>aspectjrt</artifactId>
+            <version>1.8.9</version>
         </dependency>
         <!-- Tester Libs end -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>14.0-rc2</version>
+        </dependency>
     </dependencies>
 </project>
