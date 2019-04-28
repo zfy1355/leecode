@@ -28,7 +28,7 @@ public class StockMaxProfit122 {
             return 0;
         int temp = prices[0];
         int profit = 0;
-        for(int i=0;i<=length -2;i++){
+        for(int i=0;i<length -1;i++){
             if(temp > prices[i+1])
                 temp = prices[i+1];
             else{
@@ -45,7 +45,7 @@ public class StockMaxProfit122 {
             return 0;
         int profit =0;
         int diff;
-        for(int i=0;i<=length-2;i++){
+        for(int i=0;i<length-1;i++){
             diff = prices[i+1] - prices[i];
             if(diff>0)
                 profit += diff;
