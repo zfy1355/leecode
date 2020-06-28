@@ -76,7 +76,7 @@ public class SubSets78 {
             temResult.clear();
             int len = result.size();
             for(int j = 0; j < len; j++){
-                List item = new ArrayList<>(result.get(j));
+                List item = new ArrayList(result.get(j));
                 item.add(nums[i]);
                 temResult.add(item);
             }
