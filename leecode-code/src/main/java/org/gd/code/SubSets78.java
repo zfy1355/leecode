@@ -1,10 +1,10 @@
 package org.gd.code;
 
-import com.google.common.primitives.Ints;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * 给定一组不含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。
@@ -95,7 +95,7 @@ public class SubSets78 {
             for(int j=nums.length;j>i;j--){
                 List<Integer> tempList = new ArrayList<Integer>();
                 int[] temp = Arrays.copyOfRange(nums,i,j);
-                tempList.addAll(Ints.asList(temp));
+                tempList.addAll(Arrays.stream(temp).boxed().collect(Collectors.toList()));
                 res.add(tempList);
             }
         }
