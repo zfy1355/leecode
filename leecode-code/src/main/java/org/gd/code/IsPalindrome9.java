@@ -31,6 +31,12 @@ public class IsPalindrome9 {
         boolean a = isPalindrome1(121);
         boolean b=!isPalindrome1(-121);
         boolean c=!isPalindrome1(10);
+        assert (a&&b&&c):
+                "error";
+
+        a = isPalindrome2(121);
+        b=!isPalindrome2(-121);
+        c=!isPalindrome2(10);
 
         assert (a&&b&&c):
             "error";
@@ -45,7 +51,18 @@ public class IsPalindrome9 {
         return true;
     }
     public static boolean isPalindrome2(int x) {
-        return true;
+        if(x<0)
+            return false;
+        return tempX(x) ==x;
+    }
+
+    public static int tempX(int x){
+        int y =0;
+        while(x !=0){
+            y=x%10 + y * 10;
+            x = x/10;
+        }
+        return y;
     }
 }
 
