@@ -2,7 +2,7 @@ package org.gd.code;
 
 /**
  * 回文数
- * 判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。
+ * 判d指正序（从左向右）和倒序（从右向左）读都是一样的整数。
  *
  * 示例 1:
  *
@@ -45,14 +45,16 @@ public class IsPalindrome9 {
         String xStr = x+"";
         char[] chars = xStr.toCharArray();
         for(int i=0;i<chars.length/2;i++){
-            if(chars[i] != chars[chars.length-i-1])
+            if(chars[i] != chars[chars.length-i-1]) {
                 return false;
+            }
         }
         return true;
     }
     public static boolean isPalindrome2(int x) {
-        if(x<0)
+        if(x<0) {
             return false;
+        }
         return tempX(x) ==x;
     }
 
